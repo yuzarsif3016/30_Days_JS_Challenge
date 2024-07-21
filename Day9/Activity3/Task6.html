@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Last Child</title>
+</head>
+<body>
+    <ul id="my-list">
+        <li>John</li>
+        <li>Johny</li>
+        <li>Janardhan</li>
+    </ul>
+    <script>
+        // Select the parent element
+        let ul = document.getElementById('my-list');
+        let lastChild = ul.lastElementChild;
+            ul.removeChild(lastChild);
+        
+    </script>
+</body>
+</html>

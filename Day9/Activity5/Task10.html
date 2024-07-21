@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnMouse Over Event</title>
+</head>
+<body>
+    <div id="divid" style="height: 200px; width: 200px; background-color: aqua; border: 5px solid orange;" onmouseover="changeBorder()" onmouseout="changeBorderAgain()">
+
+    </div>
+
+    <script>
+        function changeBorder(){
+            let div = document.querySelector('div');
+
+            div.style.border = '5px solid pink'
+        }
+        function changeBorderAgain() {
+            let div = document.getElementById('divid');
+            div.style.border = '5px solid orange'; // Revert border color on mouseout
+        }
+    </script>
+</body>
+</html>

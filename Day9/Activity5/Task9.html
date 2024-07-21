@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Click event</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error non
+      iusto eaque quod quasi. Nemo perferendis quam excepturi laborum error eius
+      voluptate quasi nobis culpa amet maiores ullam possimus, cupiditate
+      maxime, veniam deleniti molestiae reprehenderit quas! Maiores quibusdam
+      assumenda quia dicta, iure consequatur impedit, illo, tenetur consectetur
+      incidunt autem?
+    </p>
+    <button onclick="ChangePara()">ClickMe</button>
+    <script>
+      function ChangePara() {
+        let para = document.querySelector("p");
+        para.textContent =
+          "Mahatma Gandhi, born Mohandas Karamchand Gandhi on October 2, 1869, was a prominent leader in the Indian independence movement against British colonial rule. Known for his philosophy of nonviolent resistance, Gandhi championed the principles of truth (Satya) and nonviolence (Ahimsa). His leadership inspired millions and played a crucial role in India's struggle for freedom. Gandhi's efforts led to significant socio-political changes and left a lasting legacy of peaceful activism, influencing various global movements for civil rights and social justice.";
+      }
+    </script>
+  </body>
+</html>
