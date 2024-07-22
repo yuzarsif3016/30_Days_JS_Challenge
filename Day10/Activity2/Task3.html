@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bgc" style="background-color: aquamarine; height: 500px; width: 500px;"></div>
+    <script>
+        document.getElementById('bgc').addEventListener("mouseover",function(){
+
+            let div = document.getElementById('bgc')
+
+            div.style.backgroundColor = "yellow"
+        })
+        document.getElementById('bgc').addEventListener('mouseout', function() {
+      let div = document.getElementById('bgc');
+      div.style.backgroundColor = 'aquamarine';
+    });
+    </script>
+</body>
+</html>

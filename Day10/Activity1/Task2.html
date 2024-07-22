@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Image Visibility on Double Click</title>
+  <style>
+    #toggleImage {
+      width: 500px;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Double-click the image to toggle visibility</h1>
+  <img id="toggleImage" src="https://images.pexels.com/photos/17247893/pexels-photo-17247893/free-photo-of-white-blooming-flowers-on-cherry-tree-branches.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Toggle Visibility">
+
+  <script>
+    const image = document.getElementById('toggleImage');
+
+    image.addEventListener('dblclick', function() {
+      if (image.style.display === 'none') {
+        image.style.display = 'block';
+      } else {
+        image.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
